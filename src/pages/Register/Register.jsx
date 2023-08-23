@@ -86,8 +86,12 @@ const Register = () => {
                     </div>
 
                     <input className="mt-[15px] px-10 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] " type="submit" value="Register" />
+
+
                     {/* register error */}
-                    { registerError && <p className="text-[#C33] py-3">registerError</p> }
+                    { registerError && <p className="text-[#C33] py-3">{registerError}</p> }
+
+
                     <p className="pt-2">Already have an account ? <Link to='/login' className="text-[#C33]">Login</Link></p>
 
                 </form>
