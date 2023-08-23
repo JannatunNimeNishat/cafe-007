@@ -7,9 +7,15 @@ import logo from '../../assets/navbar/logo.png'
 
 
 import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useContext } from 'react';
+import { AuthContext } from '../../provider/Authprovider';
+
+
+
 
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext);
 
     const navItems = <>
         <li className=''>
@@ -34,6 +40,13 @@ const Navbar = () => {
 
     </>
 
+
+
+    const handleLogout = () => {
+        logOut()
+            .then(() => { })
+            .catch(() => { })
+    }
 
     return (
         <div className='shadow-xl'>
@@ -88,11 +101,17 @@ const Navbar = () => {
                         <img src={deliveryMan} alt="" />
                     </div>
 
+                    {
+                        user ?
+                            <Link onClick={handleLogout} className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Logout</Link>
+                            :
+                            <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link>
+                    }
 
-                    <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link>
+                    {/*  <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link> */}
                 </div>
             </div>
-            {/* <div className='h-[4px]  shadow-2xl mt-10'></div> */}
+
 
         </div>
     );

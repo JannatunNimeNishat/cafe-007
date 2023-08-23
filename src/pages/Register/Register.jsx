@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import accountsBanner from '../../assets/login/accountsBanner.png'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/Authprovider";
 
@@ -9,7 +9,7 @@ const Register = () => {
     const { singUp,updateUser } = useContext(AuthContext);
     const { register, handleSubmit } = useForm();
     const [registerError, setRegisterError] = useState('');
-
+    const navigate = useNavigate()
     const onSubmit = data => {
         console.log(data);
         setRegisterError('')
@@ -18,7 +18,7 @@ const Register = () => {
                 console.log(result.user);
                 updateUser(data.name, data.photoURL)
                 .then(()=>{
-
+                    navigate('/')
                 })
                 .catch(error =>{
                     console.log(error);
@@ -85,7 +85,7 @@ const Register = () => {
                         />
                     </div>
 
-                    <input className="mt-[15px] px-10 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] " type="submit" value="Register" />
+                    <input className="mt-[15px] px-10 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] cursor-pointer" type="submit" value="Register" />
 
 
                     {/* register error */}

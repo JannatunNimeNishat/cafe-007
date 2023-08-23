@@ -55,7 +55,7 @@ const Login = () => {
                         />
                     </div>
 
-                    <input className="mt-[15px] px-10 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] " type="submit" value="Login" />
+                    <input className="mt-[15px] px-10 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] cursor-pointer" type="submit" value="Login" />
 
                     {/* login error */}
                     {loginError && <p className="text-[#C33] py-3">{loginError}</p>}
