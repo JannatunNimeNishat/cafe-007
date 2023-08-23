@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.my-container{
+    @apply  w-full lg:w-11/12 mx-auto;
+}
+
+.myActive{
+    @apply font-bold text-[#2A435D];
+}
