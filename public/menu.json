@@ -1,0 +1,334 @@
+[
+    {
+        "food_name": "Spaghetti Carbonara",
+        "food_description": "Classic Italian pasta dish with eggs, cheese, pancetta, and black pepper.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/fresh-pasta-with-hearty-bolognese-parmesan-cheese-generated-by-ai_188544-9469.jpg?w=826&t=st=1692819789~exp=1692820389~hmac=a8a1c39a85466c022f12999faceb6632273d391496120e9225fa57fe9eeecea5",
+            "image_2": "https://img.freepik.com/free-photo/spaghetti-with-mixed-ingredients-white-plate_114579-15091.jpg?w=740&t=st=1692819798~exp=1692820398~hmac=3ebc915947892d32d3ad0813790c2e4ea0f0fc63d2d6323c37a56afb989d7ccd",
+            "image_3": "https://img.freepik.com/free-photo/top-view-tasty-italian-pasta-light-background_140725-136571.jpg?w=740&t=st=1692819809~exp=1692820409~hmac=70f33c226f211b6f847b8a2ad5b4c580a44e02497ea23f2812a803331b562a22"
+        },
+        "price": 12.99,
+        "food_items": [
+            "Freshly cooked spaghetti",
+            "Creamy egg and cheese mixture",
+            "Crispy pancetta",
+            "Cracked black pepper"
+        ],
+        "category": "Starters"
+    },
+    {
+        "food_name": "Grilled Salmon",
+        "food_description": "Juicy grilled salmon fillet served with lemon butter and asparagus.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/grilled-salmon-fillet-with-fresh-vegetable-salad-generated-by-ai_188544-21273.jpg?t=st=1692819719~exp=1692823319~hmac=7256e3d98c2c7e2cc645571a2e57b43dfb4ce5cec0e1b5a77e2f732bbfcbd31e&w=826",
+            "image_2": "https://img.freepik.com/free-photo/cooked-salmon-steaks_144627-30619.jpg?w=360&t=st=1692819712~exp=1692820312~hmac=686a499d59e83b07f46b69844e1bfe0064af01bd34de53533c39a503a41a98a0",
+            "image_3": "https://img.freepik.com/free-photo/baked-salmon-garnished-with-asparagus-tomatoes-with-herbs_2829-14516.jpg?w=740&t=st=1692819734~exp=1692820334~hmac=25f8b6313cf63dcc2cba473a46ee4e7905390dafd0e82a583ce0757fc861f524"
+        },
+        "price": 18.99,
+        "food_items": [
+            "Fresh salmon fillet",
+            "Zesty lemon butter sauce",
+            "Grilled asparagus spears"
+        ],
+        "category": "Starters"
+    },
+    {
+        "food_name": "Margarita Pizza",
+        "food_description": "Traditional pizza with tomato sauce, mozzarella cheese, and fresh basil leaves.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/mix-pizza-table_140725-7405.jpg?w=740&t=st=1692819648~exp=1692820248~hmac=fcbf6e1ad4bea5f4bd9fd475961c60c652c7b2ab49b1a26e6439e65f44574f13",
+            "image_2": "https://img.freepik.com/free-photo/slice-crispy-pizza-with-meat-cheese_140725-6974.jpg?w=360&t=st=1692819660~exp=1692820260~hmac=83febfc4d36df85c8d3069ba53ad26dcd4b523de9a447eae635efaa90b623fda",
+            "image_3": "https://img.freepik.com/free-photo/pizza-caezar-lettuce-parmesan-cherry-tomato-chicken-crackers-side-view_141793-3788.jpg?w=740&t=st=1692819663~exp=1692820263~hmac=6d9c0f934fe832b5d791a153fd1880dc1a64e4f49e1af9796b7e4b53803e2ec0"
+        },
+        "price": 10.99,
+        "food_items": [
+            "Thin crust dough",
+            "Rich tomato sauce",
+            "Melted mozzarella cheese",
+            "Fresh basil leaves"
+        ],
+        "category": "Starters"
+    },
+    {
+        "food_name": "Caesar Salad",
+        "food_description": "Classic Caesar salad with crisp romaine lettuce, croutons, and creamy Caesar dressing.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/side-view-caesar-salad-with-chicken-parmesan-cheese-white-bowl-wooden-board_140725-11875.jpg?w=740&t=st=1692819591~exp=1692820191~hmac=a81ca9e12921f608d02396a0e7dc1249adde928c384422df8cde03d7a5f4d453",
+            "image_2": "https://img.freepik.com/free-photo/chicken-parmesan-caesar-salad-with-lettuce-cherry-tomatoes-inside-white-bowl-served-with-sauce-bread_114579-204.jpg?w=740&t=st=1692819598~exp=1692820198~hmac=e403a7d1d40c6a380d80bb2ed573ec99958d32fe46bbd083a5272d997da2dfd6",
+            "image_3": "https://img.freepik.com/free-photo/top-view-tasty-salad-with-vegetables_23-2148515491.jpg?w=740&t=st=1692819606~exp=1692820206~hmac=106f09fe3e374607cf4fb3e8f2f86e82aee732f9c9b5150a91ec9ec97eb93565"
+        },
+        "price": 8.99,
+        "food_items": [
+            "Fresh romaine lettuce",
+            "Crunchy croutons",
+            "Savory Parmesan cheese",
+            "Creamy Caesar dressing"
+        ],
+        "category": "Starters"
+    },
+    {
+        "food_name": "Beef Burger",
+        "food_description": "Juicy beef patty with lettuce, tomato, onion, and your choice of cheese.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/front-view-burger-stand_141793-15542.jpg?w=740&t=st=1692819542~exp=1692820142~hmac=b819238c0ced4d17bda5db17328a280c32f6cd9a188085d6856e032deba1b91f",
+            "image_2": "https://img.freepik.com/free-photo/front-view-tasty-meat-burger-with-cheese-salad-dark-background_140725-89597.jpg?w=740&t=st=1692819546~exp=1692820146~hmac=a484cc8afe475fc63dfbfc9150ee58adc80f12d1f633cb573eb2ba7d513f49c3",
+            "image_3": "https://img.freepik.com/free-photo/big-sandwich-hamburger-burger-with-beef-red-onion-tomato-fried-bacon_2829-5398.jpg?w=740&t=st=1692819550~exp=1692820150~hmac=662708e9a3617d28bd3e466ed5184f071b2b785eefc9dddbf73102f0820c7036"
+        },
+        "price": 13.49,
+        "food_items": [
+            "Grilled beef patty",
+            "Fresh lettuce and tomato",
+            "Sliced onion",
+            "Choice of cheese: cheddar, Swiss, or blue cheese"
+        ],
+        "category": "Starters"
+    },
+    {
+        "food_name": "Vegetable Stir-Fry",
+        "food_description": "Assorted fresh vegetables stir-fried to perfection in a savory sauce, served over steamed rice.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5283.jpg?w=740&t=st=1692819340~exp=1692819940~hmac=11fa86e00cde1732c3a895da5c026b86ad2f0a0d0a46318cbf9b9d2dfc0172db",
+            "image_2": "https://img.freepik.com/free-photo/stir-fry-chicken-sweet-peppers-green-beans_2829-20113.jpg?w=740&t=st=1692819344~exp=1692819944~hmac=4f75e67db8b2a2a72d6d668048c36a80c10e2be4a3dc8f0e32a8df7c5bc0fa4c",
+            "image_3": "https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5229.jpg?w=740&t=st=1692819352~exp=1692819952~hmac=9845f664aec301694bca4e0783ea285dc81574606f0b857609f09a04c606b2fe"
+        },
+        "price": 11.99,
+        "food_items": [
+            "Broccoli, bell peppers, carrots",
+            "Soy-based stir-fry sauce",
+            "Steamed white rice"
+        ],
+        "category": "Lunch"
+    },
+    {
+        "food_name": "New York Cheesecake",
+        "food_description": "Rich and creamy New York-style cheesecake with a graham cracker crust.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/strawberry-syrup-custard-sponge-cake-cup-flavored-tea_140725-2212.jpg?w=740&t=st=1692819469~exp=1692820069~hmac=1412e4e960576936316b0197b31561e52521a73dac72b13ec42ba2ebc57db373",
+            "image_2": "https://img.freepik.com/free-photo/strawberry-cheesecake-side-view_140725-11353.jpg?w=360&t=st=1692819449~exp=1692820049~hmac=ba9ef039bdf2af72ecaeff762ff20b7b1ec1629c7e5591f20e73fc579db8e9f3",
+            "image_3": "https://img.freepik.com/free-photo/cheesecake-with-strawberry-table_140725-6539.jpg?w=360&t=st=1692819474~exp=1692820074~hmac=e96e34e29e92aa5597618d7466b52ce14feff513f762614b0df367059b5ae92c"
+        },
+        "price": 7.99,
+        "food_items": [
+            "Creamy cheesecake filling",
+            "Buttery graham cracker crust"
+        ],
+        "category": "Lunch"
+    },
+    {
+        "food_name": "Pesto Chicken Penne",
+        "food_description": "Grilled chicken breast served with penne pasta in a flavorful basil pesto sauce.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/closeup-shot-freshly-made-delicious-pasta-pan_181624-55204.jpg?w=740&t=st=1692819280~exp=1692819880~hmac=e11ab484b6907872427df245758639e3ebf934c5287e5dc754b638a557eb09a8",
+            "image_2": "https://img.freepik.com/free-photo/closeup-shot-penne-pasta-with-tomato_181624-42934.jpg?w=740&t=st=1692819270~exp=1692819870~hmac=3bf1b50fefd892adadd0799b0389f21efdc46c544a73e412321d815f822cb6d5",
+            "image_3": "https://img.freepik.com/free-photo/black-pepper-pork-pasta_1417-140.jpg?w=740&t=st=1692819289~exp=1692819889~hmac=279309f6a9f643666f0537415cbf8a93b8cfe2e0e23420788df6e551f302d1c0"
+        },
+        "price": 14.99,
+        "food_items": [
+            "Grilled chicken breast",
+            "Penne pasta",
+            "Fresh basil pesto",
+            "Parmesan cheese"
+        ],
+        "category": "Lunch"
+    },
+    {
+        "food_name": "Sushi Platter",
+        "food_description": "Assortment of fresh sushi rolls including tuna, salmon, and California rolls.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/painting-sushi-plate-with-picture-fish-it_188544-12221.jpg?w=826&t=st=1692819192~exp=1692819792~hmac=9ae19223d526672c1ef7fd595206ff41d94b6677c176286c529ff6cd968a8a53",
+            "image_2": "https://img.freepik.com/free-photo/sushi-set-with-hot-cold-rolls-wood-platter_140725-1625.jpg?w=740&t=st=1692819171~exp=1692819771~hmac=bda9ac558071a30aef847cf5fa9200ae02d644bc3bd38af802225c6221b02bbb",
+            "image_3": "https://img.freepik.com/free-photo/sushi-dish-asian-restaurant_23-2148195586.jpg?w=740&t=st=1692819207~exp=1692819807~hmac=41d25274d0a15206bafad7f6126273a3cc713075660ecdf976541e3cdac1bc14"
+        },
+        "price": 22.99,
+        "food_items": [
+            "Tuna, salmon, and California rolls",
+            "Wasabi and soy sauce"
+        ],
+        "category": "Lunch"
+    },
+    {
+        "food_name": "Chicken Shawarma Wrap",
+        "food_description": "Grilled marinated chicken wrapped in a warm pita with tahini sauce and veggies.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/fresh-gourmet-sandwich-with-meat-vegetables-generative-ai_188544-8106.jpg?w=740&t=st=1692819047~exp=1692819647~hmac=5629a96bac6c7ca21be033a8fb07b59218a6adec291beb5eb053392a97b88bc0",
+            "image_2": "https://img.freepik.com/free-photo/tortilla_144627-20848.jpg?t=st=1692819047~exp=1692819647~hmac=fafc3ef14c713a7438bcf2d9c32bce2cd5a3fd5e1579970e0332ae9a3b9b034a",
+            "image_3": "https://img.freepik.com/free-photo/delicious-tortilla_144627-12057.jpg?w=826&t=st=1692819083~exp=1692819683~hmac=c957c2d3a194fda7d4c4cfccdc201c785d4b848d74789ac0ff6ff847a2532de4"
+        },
+        "price": 10.99,
+        "food_items": [
+            "Grilled marinated chicken",
+            "Warm pita bread",
+            "Tahini sauce",
+            "Lettuce, tomato, onion"
+        ],
+        "category": "Lunch"
+    },
+    {
+        "food_name": "Mango Tango Smoothie",
+        "food_description": "Refreshing smoothie made with ripe mangoes, yogurt, and a touch of honey.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/mango-shake-fresh-tropical-fruit-smoothies_501050-963.jpg?w=360&t=st=1692818822~exp=1692819422~hmac=2b88c4e4ce88cd2821c84378cc563002c56b9b8e35929f4853d9fa7fe2885361",
+            "image_2": "https://img.freepik.com/free-photo/delicious-fruits-orange-juice_23-2148858628.jpg?w=740&t=st=1692818907~exp=1692819507~hmac=81c1678c7c1a32ec68ca312938dc2822d9565fcdfc3a45359c77b40a62cbd9a9",
+            "image_3": "https://img.freepik.com/free-photo/front-view-fresh-orange-juice-glass-served-with-tube-mint-whole-cut-oranges-left-side-wooden-table_140725-94517.jpg?w=740&t=st=1692818940~exp=1692819540~hmac=39c52035f25719b35435c8b7ca905385525931aea5bfe8107d3b074ed940649f"
+        },
+        "price": 6.49,
+        "food_items": [
+            "Ripe mangoes",
+            "Creamy yogurt",
+            "Honey",
+            "Ice"
+        ],
+        "category": "Beverage"
+    },
+    {
+        "food_name": "Classic Iced Coffee",
+        "food_description": "Chilled coffee served over ice with a splash of milk and sweetener.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/glass-foamy-cold-coffee-with-whipped-cream-chocolate-wooden-plate_114579-90914.jpg?w=740&t=st=1692819983~exp=1692820583~hmac=21badb10982a3f46de8871c05b9e3a80b0b8302082b7448090f22a7d97d05e38",
+            "image_2": "https://img.freepik.com/free-photo/front-view-mokachino-with-whipped-cream-chocolate-table_141793-4644.jpg?w=740&t=st=1692819988~exp=1692820588~hmac=5abdccac010aa5b797258db605526a415697a94fe534bddc4b3987aaa6240677",
+            "image_3": "https://img.freepik.com/free-photo/iced-coffee-with-whipped-cream_1150-18518.jpg?w=360&t=st=1692819978~exp=1692820578~hmac=44b21f8978e0278aca911cdbc00d622b93a4d2a32da84148e532ac6ed87711ea"
+        },
+        "price": 4.99,
+        "food_items": [
+            "Freshly brewed coffee",
+            "Cold milk",
+            "Sweetener",
+            "Ice cubes"
+        ],
+        "category": "Beverage"
+    },
+    {
+        "food_name": "Berry Bliss Smoothie",
+        "food_description": "A delightful blend of mixed berries, banana, yogurt, and a hint of honey.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/close-up-tasty-strawberry-milkshake_1220-342.jpg?w=740&t=st=1692820023~exp=1692820623~hmac=0dbd4eea88aadbd35653d987ebf558f97ade7d4df28f20e768fcb999d69639de",
+            "image_2": "https://img.freepik.com/free-photo/high-angle-glasses-with-smoothie_23-2148751825.jpg?w=360&t=st=1692820031~exp=1692820631~hmac=452259c8a9f8569e06d9ccd434c9cbfcd51efb2fa54325562db0903088b3107f",
+            "image_3": "https://img.freepik.com/free-photo/glass-freshly-squeezed-grape-juice_1150-5803.jpg?w=740&t=st=1692820040~exp=1692820640~hmac=8f743e7ea108fb8549f488f5cacf4101d42fe9b732f9a646c225ae65d7526431"
+        },
+        "price": 5.99,
+        "food_items": [
+            "Mixed berries (strawberries, blueberries, raspberries)",
+            "Banana",
+            "Creamy yogurt",
+            "Drizzle of honey",
+            "Ice"
+        ],
+        "category": "Beverage"
+    },
+    {
+        "food_name": "Cucumber Mint Cooler",
+        "food_description": "Refreshing drink made with cucumber, mint, lime, and a touch of sparkling water.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/green-vegetable-smoothie_93675-129387.jpg?w=740&t=st=1692820079~exp=1692820679~hmac=e1e063a0f7121eafb0eab0a8e614293c0e089b82f0ef4cbcee469d2c03d16614",
+            "image_2": "https://img.freepik.com/free-photo/mojito-cocktail_144627-34952.jpg?w=740&t=st=1692820089~exp=1692820689~hmac=d6ea70460dc96431d064ea7670b22de2515aa23f2c2bf1495d8e936484a7edca",
+            "image_3": "https://img.freepik.com/free-photo/rose-exotic-cocktail-fruit-blue_155003-12663.jpg?w=740&t=st=1692820095~exp=1692820695~hmac=7b0638144a61b3ec9354af91ec7b820e09b0e694e7febb1fe11035eeaafe4156"
+        },
+        "price": 4.49,
+        "food_items": [
+            "Fresh cucumber slices",
+            "Mint leaves",
+            "Lime juice",
+            "Sparkling water"
+        ],
+        "category": "Beverage"
+    },
+    {
+        "food_name": "Minty Iced Tea",
+        "food_description": "Iced tea brewed with a blend of black tea and fresh mint leaves.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/front-view-herbal-tea-concept-with-lemon_23-2148555201.jpg?w=740&t=st=1692820198~exp=1692820798~hmac=361cf30054f7f8e05475b4ad045f0792db58e500c223c17124f89a0d4f610b58",
+            "image_2": "https://img.freepik.com/free-photo/ice-tea-with-mint_144627-41787.jpg?w=360&t=st=1692820204~exp=1692820804~hmac=984f103a066cab5ab8c6bbf08c2f41c9156584eabdcd58a1b24f66472ff2cbf7",
+            "image_3": "https://img.freepik.com/free-photo/homemade-ice-tea-with-citrus_140725-2770.jpg?w=360&t=st=1692820210~exp=1692820810~hmac=e5ef4ac9a920dd30aae05373042884e9be0dab004da5525bf2f899f67bdf9482"
+        },
+        "price": 3.49,
+        "food_items": [
+            "Black tea leaves",
+            "Fresh mint leaves",
+            "Sugar (optional)",
+            "Ice cubes"
+        ],
+        "category": "Beverage"
+    },
+    {
+        "food_name": "Classic Pancakes",
+        "food_description": "Fluffy pancakes served with maple syrup and butter.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/front-view-yummy-jelly-pancakes-with-fresh-strawberries-dark-space_140725-95446.jpg?w=740&t=st=1692820526~exp=1692821126~hmac=64aa5d72e43868dfb36cfc2da0dcd7bca73b6c1274f974c7df2e85f2464e8dcc",
+            "image_2": "https://img.freepik.com/free-photo/front-view-delicious-round-pancakes-yummy-round-formed-with-cranberries-pancake-pastry-cooking_140725-21726.jpg?w=740&t=st=1692820521~exp=1692821121~hmac=c26c39a9e17f57f28533b7fdd987277834276ff46b4f1fd096079af06a463853",
+            "image_3": "https://img.freepik.com/free-photo/front-view-delicious-round-pancakes-yummy-round-formed-with-blueberries-cinnamon-pancake-pastry-cooking_140725-21711.jpg?w=740&t=st=1692820531~exp=1692821131~hmac=f50ceb685c1b3e0b70d78c52450d92dbdc20eb5b7368d89442c11950ee90f662"
+        },
+        "price": 7.99,
+        "food_items": [
+            "Homemade pancake batter",
+            "Maple syrup",
+            "Butter"
+        ],
+        "category": "Breakfast"
+    },
+    {
+        "food_name": "Egg and Cheese Breakfast Sandwich",
+        "food_description": "Scrambled eggs and melted cheese served in a toasted English muffin.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/breakfast-sandwich-made-with-bread-fried-egg-ham-lettuce_1150-25681.jpg?w=740&t=st=1692820483~exp=1692821083~hmac=32a48b703895f18475ee65106c21e107ee3bd5c545e4519245b2ea4ab4d7630d",
+            "image_2": "https://img.freepik.com/free-photo/sandwich-with-poached-egg_2829-6399.jpg?w=740&t=st=1692820465~exp=1692821065~hmac=5f5fd1284e843723018a105c3ba2987bff2e04f3424d5896451195598b5a344d",
+            "image_3": "https://img.freepik.com/free-photo/club-salmon-sandwich-french-fries_140725-9397.jpg?w=360&t=st=1692820475~exp=1692821075~hmac=cfd632afda56cd5899a1c1a0a22ebfcb53e1b50d79e20fc982a4eb0ef37e96af"
+        },
+        "price": 5.49,
+        "food_items": [
+            "Fluffy scrambled eggs",
+            "Melted cheese",
+            "Toasted English muffin"
+        ],
+        "category": "Breakfast"
+    },
+    {
+        "food_name": "Greek Yogurt Parfait",
+        "food_description": "Layers of creamy Greek yogurt, fresh berries, and crunchy granola.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/fruit-yogurt-glasses-composition_23-2148660443.jpg?w=740&t=st=1692820426~exp=1692821026~hmac=f92e3f306ce89d597d681bcecea22ec1af991383f900794c0c6b39d71e91a41f",
+            "image_2": "https://img.freepik.com/free-photo/strawberries-layer-dessert_23-2147984085.jpg?w=740&t=st=1692820416~exp=1692821016~hmac=90624b01283abe7184b1bcabb0942297d2900d62876a37cb957ad1b46e6bbcfa",
+            "image_3": "https://img.freepik.com/free-photo/front-view-strawberry-dessert-inside-little-glasses-brown-surface_140725-14503.jpg?w=360&t=st=1692820421~exp=1692821021~hmac=77ce9d454b579f19863cdf1d410290ce674b26988d6143059858811348fa0bc4"
+        },
+        "price": 6.99,
+        "food_items": [
+            "Creamy Greek yogurt",
+            "Mixed berries (strawberries, blueberries)",
+            "Crunchy granola"
+        ],
+        "category": "Breakfast"
+    },
+    {
+        "food_name": "Avocado Toast",
+        "food_description": "Sliced avocado on toasted whole-grain bread, topped with red pepper flakes.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/avocado-open-toast-with-avocado-slices-lemon-flax-seeds-sesame-seeds-black-bread-slices-top-view_2831-797.jpg?w=740&t=st=1692820371~exp=1692820971~hmac=6c61fdb5b2f09a8b0ef7c70ca914338df9c07fff13b492c7eedbb6a824a7546e",
+            "image_2": "https://img.freepik.com/free-photo/tasty-appetizing-crispbread-with-mashed-avocado-served-plate_1220-6277.jpg?w=740&t=st=1692820376~exp=1692820976~hmac=e95986877cbcbaa33027a1e925b576fc8e8b7cf625d4f25edcedc5c124f5f802",
+            "image_3": "https://img.freepik.com/free-photo/delicious-toast-with-veggie-cream-flat-lay_23-2148698706.jpg?w=360&t=st=1692820382~exp=1692820982~hmac=a5848d2a9d30b8658a8541803ccd773ab94e5645d6ed17c2ecc46ffecb25738c"
+        },
+        "price": 8.49,
+        "food_items": [
+            "Ripe avocado slices",
+            "Toasted whole-grain bread",
+            "Red pepper flakes",
+            "Salt and pepper"
+        ],
+        "category": "Breakfast"
+    },
+    {
+        "food_name": "Nutella Banana Crepes",
+        "food_description": "Delicate crepes filled with Nutella and sliced bananas, dusted with powdered sugar.",
+        "food_img": {
+            "image_1": "https://img.freepik.com/free-photo/flapjack-with-fruits-inside-chocolate-top_140725-6139.jpg?w=740&t=st=1692820655~exp=1692821255~hmac=838d4de4dfe0b49c6e87dc49cf4380743f039917005dc391829875bf4e8f87e5",
+            "image_2": "https://img.freepik.com/free-photo/choco-doner-chocolate-wrapped-pancake-plate_140725-10909.jpg?w=360&t=st=1692820663~exp=1692821263~hmac=af782fcfb1f93419bffe1040fa10e83aad94f56c6f49cc5377bcc3f6d00649bc",
+            "image_3": "https://img.freepik.com/free-photo/chocolate-crepe_23-2148148771.jpg?w=360&t=st=1692820668~exp=1692821268~hmac=d02e7040fc543aafdd85a4211cd05807fa443c3079bae056fff70f54a37c51fa"
+        },
+        "price": 9.99,
+        "food_items": [
+            "Thin crepes",
+            "Creamy Nutella spread",
+            "Sliced bananas",
+            "Powdered sugar"
+        ],
+        "category": "Breakfast"
+    }
+]

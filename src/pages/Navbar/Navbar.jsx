@@ -10,7 +10,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 import { useContext } from 'react';
 import { AuthContext } from '../../provider/Authprovider';
 
-
+import { BiSolidUser } from "react-icons/bi";
 
 
 
@@ -31,11 +31,15 @@ const Navbar = () => {
                 ITEMS
             </NavLink>
         </li>
+
+
+
         <li>
             <NavLink to='/' className={({ isActive }) => isActive ? 'myActive' : ''}>
                 CONTACT
             </NavLink>
         </li>
+
 
 
     </>
@@ -86,20 +90,29 @@ const Navbar = () => {
 
                     </ul>
                 </div>
-                <div className="navbar-end flex gap-5  -ml-16">
+                <div className="navbar-end flex gap-4  -ml-16">
                     <div className='bg-[#2A435D] w-[50px] h-[50px] flex items-center justify-center  rounded-full'>
                         <AiOutlineShoppingCart className='w-[30px] h-[30px] text-white' />
                     </div>
 
-                    <div className='text-[#2A435D] leading-5 flex gap-3 mr-16'>
+                    <div className='text-[#2A435D] leading-5 flex items-center gap-3 mr-10'>
                         <div>
                             <p className='text-[#2A435D] font-bold'>Delivery Order</p>
                             <small className='text-[#2A435D] '>
                                 +880 1743607289
                             </small>
                         </div>
-                        <img src={deliveryMan} alt="" />
+                        <img className='h-10 w-10' src={deliveryMan} alt="" />
                     </div>
+                    {
+                        user && user?.photoURL ?
+                            <figure className='h-10 w-10 rounded-full mr-2'>
+                                <img className='h-full w-full rounded-full' src={user?.photoURL} />
+
+                            </figure>
+                            :
+                            <BiSolidUser className='h-8 w-8 mr-2' />
+                    }
 
                     {
                         user ?
