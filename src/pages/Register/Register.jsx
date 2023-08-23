@@ -18,6 +18,7 @@ const Register = () => {
                 console.log(result.user);
                 updateUser(data.name, data.photoURL)
                 .then(()=>{
+
                     navigate('/')
                 })
                 .catch(error =>{
