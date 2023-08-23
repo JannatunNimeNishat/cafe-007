@@ -10,3 +10,11 @@
 .myActive{
     @apply font-bold text-[#2A435D];
 }
+
+.my-btn{
+    @apply text-white font-bold bg-[#C33]  rounded-[10px];
+}
+
+.my-text-color{
+    @apply text-[#2A435D]
+}

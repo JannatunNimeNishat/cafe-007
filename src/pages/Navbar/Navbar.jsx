@@ -36,7 +36,7 @@ const Navbar = () => {
 
 
     return (
-        <div>
+        <div className='shadow-xl'>
 
             {/* subheader */}
             <div className="bg-[#CC3333] h-[35px] hidden lg:flex items-center gap-12 text-white
@@ -52,7 +52,7 @@ const Navbar = () => {
             </div>
 
 
-            <div className="navbar my-container border">
+            <div className="navbar my-container  ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -92,8 +92,8 @@ const Navbar = () => {
                     <Link className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link>
                 </div>
             </div>
+            {/* <div className='h-[4px]  shadow-2xl mt-10'></div> */}
 
-            
         </div>
     );
 };
