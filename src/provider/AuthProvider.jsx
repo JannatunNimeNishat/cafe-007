@@ -39,14 +39,14 @@ const AuthProvider = ({ children }) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setLoading(false);
             setUser(currentUser);
-            console.log(currentUser);
+            // console.log(currentUser);
             if (currentUser) {
                 const loggedUser = { email: currentUser.email }
                 axios.post('http://localhost:5000/jwt', {
                     loggedUser
                 })
                     .then((res) => {
-                        console.log(res.data.token);
+                        // console.log(res.data.token);
                         localStorage.setItem('access-token', res.data.token)
                     })
                     .catch((error) => {
