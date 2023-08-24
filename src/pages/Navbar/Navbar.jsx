@@ -11,23 +11,26 @@ import { useContext } from 'react';
 import { AuthContext } from '../../provider/Authprovider';
 
 import { BiSolidUser } from "react-icons/bi";
+import useGetCartItems from '../../hooks/useGetCartItems';
 
 
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
+    const [cartItems] = useGetCartItems();
 
     const navItems = <>
         <li className=''>
             <NavLink to='/' className={({ isActive }) => isActive ? 'myActive' : ''}>HOME</NavLink>
+            {/* <NavLink to='/' className={`bg-white text-white`}>HOME</NavLink> */}
         </li>
         <li>
-            <NavLink to='/' className={({ isActive }) => isActive ? 'myActive' : ''}>
+            <NavLink to='/about' className={({ isActive }) => isActive ? 'myActive' : ''}>
                 ABOUT
             </NavLink>
         </li>
         <li>
-            <NavLink to='/' className={({ isActive }) => isActive ? 'myActive' : ''}>
+            <NavLink to='/items' className={({ isActive }) => isActive ? 'myActive' : ''}>
                 ITEMS
             </NavLink>
         </li>
@@ -35,7 +38,7 @@ const Navbar = () => {
 
 
         <li>
-            <NavLink to='/' className={({ isActive }) => isActive ? 'myActive' : ''}>
+            <NavLink to='/contact' className={({ isActive }) => isActive ? 'myActive' : ''}>
                 CONTACT
             </NavLink>
         </li>
@@ -92,7 +95,9 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end flex gap-4  -ml-16">
                     <div className='bg-[#2A435D] w-[50px] h-[50px] flex flex-col items-center justify-center  rounded-full'>
-                        <small className='text-[#FFF8EE] font-bold'>2</small>
+                        <small className='text-[#FFF8EE] font-bold'>
+                            {cartItems && cartItems?.length}
+                            </small>
                         <AiOutlineShoppingCart className='w-[30px] h-[30px] text-[#FFF8EE] -mt-1' />
                     </div>
 

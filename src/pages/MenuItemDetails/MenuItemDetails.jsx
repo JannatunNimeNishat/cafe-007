@@ -6,6 +6,7 @@ import banner from '../../assets/menuItemDetails/menu_item_banner.png';
 import SeeMoreItems from "./SeeMoreItems";
 import { AuthContext } from "../../provider/Authprovider";
 import Swal from "sweetalert2";
+import useGetCartItems from "../../hooks/useGetCartItems";
 
 const MenuItemDetails = () => {
     const _id = useParams();
@@ -13,6 +14,7 @@ const MenuItemDetails = () => {
     const { user, logOut } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
+    const [, refetch] = useGetCartItems();
 
     // getting the food item details
     useEffect(() => {
@@ -58,6 +60,7 @@ const MenuItemDetails = () => {
                 .then((res) => {
                     // console.log(res);
                     if (res.data.insertedId) {
+                        refetch();
                         Swal.fire({
                             position: 'top-end',
                             icon: 'success',

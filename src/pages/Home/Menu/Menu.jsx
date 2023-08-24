@@ -34,7 +34,7 @@ const Menu = () => {
             })
     }
 
-    console.log(menuItems);
+    // console.log(menuItems);
 
     return (
         <div className="my-container mt-[55px]">
