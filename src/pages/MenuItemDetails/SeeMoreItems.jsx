@@ -16,17 +16,17 @@ const SeeMoreItems = ({ category }) => {
 
             <h3 className="text-[#C33] text-[35px] font-bold text-center">See more items</h3>
 
-            <div className="mt-[40px] grid grid-cols-2 gap-[20px]">
+            <div className="mt-[40px] grid grid-cols-1 lg:grid-cols-2 gap-[20px] px-5 lg:px-0">
                 {
                     moreItems?.slice(1, 5).map(item => <div key={item._id}
-                        className="flex items-center gap-3 w-[588px] h-[170px] rounded-[20px] shadow-md px-5 py-5 border hover:shadow-2xl"
+                        className="lg:flex items-center gap-3 lg:w-[588px] lg:h-[170px] rounded-[20px] shadow-md px-5 py-5 border hover:shadow-2xl "
                     >
                         <div>
                             <Link to={`/menuItemDetails/${item?._id}`} className="font-bold text-[#2A435D] text-[20px] hover:text-[#C33]">{item.food_name}</Link>
                             <p className="mt-[10px] text-[#2A435D] text-[18px]">{item.food_description}</p>
                             <p className="mt-[10px] font-bold text-[#2A435D] text-[20px]">From ${item.price}</p>
                         </div>
-                        <figure className="h-[150px] w-[180px] rounded-[20px]">
+                        <figure className="h-[150px] lg:w-[180px] rounded-[20px]">
                             <img className="h-full w-full rounded-[20px]" src={item?.food_img?.image_2} alt="" />
 
                         </figure>

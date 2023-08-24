@@ -32,13 +32,13 @@ const MenuItemDetails = () => {
             </div>
 
             {/* details */}
-            <div className="mt-[30px] flex items-center gap-10 my-container">
+            <div className="mt-[30px] px-5 lg:px-0 lg:flex items-center gap-10 my-container">
                 {/* left */}
                 <div>
-                    <figure className="w-[594px] h-[334px]">
+                    <figure className="lg:w-[594px] lg:h-[334px]">
                         <img className="h-full w-full" src={food_img?.image_1} alt="" />
                     </figure>
-                    <div className="flex items-center justify-center gap-5   mt-3">
+                    <div className=" hidden lg:flex items-center justify-center gap-5   mt-3">
                         <figure className="w-[250px] h-[250px]">
                             <img className="h-full w-full" src={food_img?.image_2} alt="" />
                         </figure>
@@ -49,7 +49,7 @@ const MenuItemDetails = () => {
 
                 </div>
                 {/* right */}
-                <div>
+                <div className="mt-5 lg:mt-0">
                     <p className="text-[#2A435D] mb-3"><span className="font-bold text-xl">Description:</span> {food_description}</p>
 
                     <span className="font-bold text-[#2A435D] ">Items:</span>{food_items?.map((item, index) => <span key={index} className="text-[#2A435D] ">{item},</span>)}
@@ -65,7 +65,7 @@ const MenuItemDetails = () => {
             {/* see more items */}
             { itemDetails && <SeeMoreItems category={category}/> }
 
-            
+
         </div>
     );
 };
