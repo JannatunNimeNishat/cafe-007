@@ -91,18 +91,19 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-4  -ml-16">
-                    <div className='bg-[#2A435D] w-[50px] h-[50px] flex items-center justify-center  rounded-full'>
-                        <AiOutlineShoppingCart className='w-[30px] h-[30px] text-white' />
+                    <div className='bg-[#2A435D] w-[50px] h-[50px] flex flex-col items-center justify-center  rounded-full'>
+                        <small className='text-[#FFF8EE] font-bold'>2</small>
+                        <AiOutlineShoppingCart className='w-[30px] h-[30px] text-[#FFF8EE] -mt-1' />
                     </div>
 
                     <div className='text-[#2A435D] leading-5 flex items-center gap-3 mr-10'>
                         <div>
-                            <p className='text-[#2A435D] font-bold'>Delivery Order</p>
+                            <p className='text-[#2A435D] font-bold'>Delivery </p>
                             <small className='text-[#2A435D] '>
                                 +880 1743607289
                             </small>
                         </div>
-                        <img className='h-10 w-10' src={deliveryMan} alt="" />
+                        <img className='h-10 w-10 ml-1' src={deliveryMan} alt="" />
                     </div>
                     {
                         user && user?.photoURL ?
@@ -116,9 +117,9 @@ const Navbar = () => {
 
                     {
                         user ?
-                            <Link onClick={handleLogout} className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Logout</Link>
+                            <Link onClick={handleLogout} className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] hover:bg-[#C00]">Logout</Link>
                             :
-                            <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link>
+                            <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] hover:bg-[#C00]">Login</Link>
                     }
 
                     {/*  <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link> */}

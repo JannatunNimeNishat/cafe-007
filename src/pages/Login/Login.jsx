@@ -1,7 +1,7 @@
 
 import { useForm } from "react-hook-form";
 import accountsBanner from '../../assets/login/accountsBanner.png'
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/Authprovider";
 const Login = () => {
@@ -9,12 +9,15 @@ const Login = () => {
     const [loginError, setLoginError] = useState('');
     const { register, handleSubmit } = useForm();
     const navigate = useNavigate();
+    const location = useLocation();
+    const form = location.state?.from?.pathname || '/';
+    console.log(location);
     const onSubmit = data => {
         setLoginError('');
         singIn(data.email, data.password)
             .then((result) => {
                 // console.log(result);
-                navigate('/')
+                navigate(form, { replace: true });
             })
             .catch(error => {
                 // console.log(error.message);

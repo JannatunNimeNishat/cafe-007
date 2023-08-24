@@ -1,14 +1,20 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useContext, useEffect, useState } from "react";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 
 import banner from '../../assets/menuItemDetails/menu_item_banner.png';
 import SeeMoreItems from "./SeeMoreItems";
+import { AuthContext } from "../../provider/Authprovider";
+import Swal from "sweetalert2";
 
 const MenuItemDetails = () => {
     const _id = useParams();
     const [itemDetails, setItemDetails] = useState('');
+    const { user, logOut } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
 
+    // getting the food item details
     useEffect(() => {
         setItemDetails('');
         axios.get(`http://localhost:5000/menu_item_details/${_id._id}`)
@@ -20,7 +26,62 @@ const MenuItemDetails = () => {
             })
     }, [_id._id]);
 
-   
+    //add to cart
+    const handleAddToCart = (item) => {
+        if (!user) {
+            Swal.fire({
+                title: 'You have to Login first?',
+                text: "",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Login'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    navigate('/login', { state: { from: location } })
+
+                }
+            })
+        }
+        else {
+            const item_id = item._id;
+            delete item._id;
+            const addItem = {
+                item_id,
+                email: user?.email,
+                ...item
+            }
+            const access_token = `Bearer ${localStorage.getItem('access-token')}`;
+
+            axios.post(`http://localhost:5000/add_to_cart/${user?.email}`, { addItem, access_token })
+                .then((res) => {
+                    // console.log(res);
+                    if (res.data.insertedId) {
+                        Swal.fire({
+                            position: 'top-end',
+                            icon: 'success',
+                            title: 'Successfully added to the cart',
+                            showConfirmButton: false,
+                            timer: 1500
+                        })
+                    }
+                })
+                .catch((error) => {
+                    console.log(error.response.status);
+                    if (error.response.status === 401 || error.response.status === 403) {
+                        logOut()
+                            .then(() => {
+
+                                navigate('/login', { state: { from: location } });
+                            })
+                            .catch((error) => console.log(error))
+                    }
+                })
+        }
+
+    }
+
     const { food_description, food_img, food_items, food_name, price, category } = itemDetails;
 
     return (
@@ -56,14 +117,14 @@ const MenuItemDetails = () => {
                     <p className="text-[#2A435D] mt-3"> <span className="font-bold text-xl">Category:</span> {category}</p>
                     <p className="text-[#2A435D] mt-3 mb-8"> <span className="font-bold text-xl">Price:</span> ${price}</p>
 
-                    <Link className=" bg-[#C33] text-white rounded-[10px] px-8 py-3 font-bold hover:bg-[#C00]">Add to cart</Link>
+                    <button onClick={() => handleAddToCart(itemDetails)} className=" bg-[#C33] text-white rounded-[10px] px-8 py-3 font-bold hover:bg-[#C00]">Add to cart</button>
 
                 </div>
 
             </div>
 
             {/* see more items */}
-            { itemDetails && <SeeMoreItems category={category}/> }
+            {itemDetails && <SeeMoreItems category={category} />}
 
 
         </div>
