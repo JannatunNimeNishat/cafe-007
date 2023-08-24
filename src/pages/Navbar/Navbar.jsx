@@ -94,14 +94,19 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex gap-4  -ml-16">
+
+
                     <div className='bg-[#2A435D] w-[50px] h-[50px] flex flex-col items-center justify-center  rounded-full'>
                         <small className='text-[#FFF8EE] font-bold'>
                             {cartItems && cartItems?.length}
-                            </small>
-                        <AiOutlineShoppingCart className='w-[30px] h-[30px] text-[#FFF8EE] -mt-1' />
+                        </small>
+                        <Link to='/cart'>
+                            <AiOutlineShoppingCart className='w-[30px] h-[30px] text-[#FFF8EE] -mt-1' />
+                        </Link>
                     </div>
 
-                    <div className='text-[#2A435D] leading-5 flex items-center gap-3 mr-10'>
+
+                    <div className='text-[#2A435D] leading-5 flex items-center gap-2 mr-8'>
                         <div>
                             <p className='text-[#2A435D] font-bold'>Delivery </p>
                             <small className='text-[#2A435D] '>
@@ -127,7 +132,7 @@ const Navbar = () => {
                             <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] hover:bg-[#C00]">Login</Link>
                     }
 
-                    {/*  <Link to='/login' className="px-3 py-2 bg-[#C33] text-white font-bold text-center rounded-[10px] ">Login</Link> */}
+
                 </div>
             </div>
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
-import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
+import {  useLocation, useNavigate, useParams } from "react-router-dom";
 
 import banner from '../../assets/menuItemDetails/menu_item_banner.png';
 import SeeMoreItems from "./SeeMoreItems";
