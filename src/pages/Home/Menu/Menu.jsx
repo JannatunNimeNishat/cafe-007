@@ -11,7 +11,7 @@ const Menu = () => {
 
     // initial loading
     useEffect(() => {
-        axios.get(`http://localhost:5000/menu/Breakfast`)
+        axios.get(`https://cafe-007-server.vercel.app/menu/Breakfast`)
             .then(res => {
                 setMenuItems(res.data);
             })
@@ -25,7 +25,7 @@ const Menu = () => {
         setActiveTab(tabIndex);
         setMenuItems('');
 
-        axios.get(`http://localhost:5000/menu/${value}`)
+        axios.get(`https://cafe-007-server.vercel.app/menu/${value}`)
             .then(res => {
                 setMenuItems(res.data);
             })
@@ -37,7 +37,7 @@ const Menu = () => {
     // console.log(menuItems);
 
     return (
-        <div className="my-container mt-[55px]">
+        <div className="my-container mt-[80px]">
 
             <div className="text-center">
                 <p className="text-[#C33] font-bold text-[20px]">SPECIALS</p>

@@ -19,7 +19,7 @@ const MenuItemDetails = () => {
     // getting the food item details
     useEffect(() => {
         setItemDetails('');
-        axios.get(`http://localhost:5000/menu_item_details/${_id._id}`)
+        axios.get(`https://cafe-007-server.vercel.app/menu_item_details/${_id._id}`)
             .then(res => {
                 setItemDetails(res.data);
             })
@@ -56,7 +56,7 @@ const MenuItemDetails = () => {
             }
             const access_token = `Bearer ${localStorage.getItem('access-token')}`;
 
-            axios.post(`http://localhost:5000/add_to_cart/${user?.email}`, { addItem, access_token })
+            axios.post(`https://cafe-007-server.vercel.app/add_to_cart/${user?.email}`, { addItem, access_token })
                 .then((res) => {
                     // console.log(res);
                     if (res.data.insertedId) {

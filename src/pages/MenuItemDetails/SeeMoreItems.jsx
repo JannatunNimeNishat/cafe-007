@@ -7,7 +7,7 @@ const SeeMoreItems = ({ category }) => {
   
     const [moreItems, setMoreItems] = useState([]);
     useEffect(() => {
-        axios.get(`http://localhost:5000/menu/${category}`)
+        axios.get(`https://cafe-007-server.vercel.app/menu/${category}`)
             .then(res => setMoreItems(res.data))
             .catch(error => console.log(error))
     }, [category]);

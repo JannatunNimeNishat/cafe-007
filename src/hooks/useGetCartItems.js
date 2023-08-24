@@ -12,7 +12,7 @@ const useGetCartItems = () => {
         queryKey: ['cartItems', user?.email],
         enabled: !loading && !!user,
         queryFn: async () => {
-            const res = await axios.post(`http://localhost:5000/cartItems/${user?.email}`, { access_token })
+            const res = await axios.post(`https://cafe-007-server.vercel.app/cartItems/${user?.email}`, { access_token })
             console.log(res.data);
             return res.data;
 

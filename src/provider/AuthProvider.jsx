@@ -42,7 +42,7 @@ const AuthProvider = ({ children }) => {
             // console.log(currentUser);
             if (currentUser) {
                 const loggedUser = { email: currentUser.email }
-                axios.post('http://localhost:5000/jwt', {
+                axios.post('https://cafe-007-server.vercel.app/jwt', {
                     loggedUser
                 })
                     .then((res) => {

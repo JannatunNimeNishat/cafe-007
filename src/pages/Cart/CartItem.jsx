@@ -14,7 +14,7 @@ const CartItem = ({ item }) => {
 
     const handleDelete = (_id) => {
         console.log(_id);
-        axios.delete(`http://localhost:5000/delete_cart_item/${_id}`)
+        axios.delete(`https://cafe-007-server.vercel.app/delete_cart_item/${_id}`)
             .then(res => {
                 console.log(res.data)
                 if (res.data.deletedCount > 0) {
