@@ -70,9 +70,9 @@ const Menu = () => {
             {/* tab content */}
             {/* tab - 1 */}
 
-            <div className={`mt-[18px] px-24 flex gap-2 ${activeTab === 1 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[686px]">
-                    <img src={menu_banner} alt="" />
+            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 1 ? 'block' : 'hidden'}`}>
+                <figure className="w-1/2 h-[550px] border">
+                    <img className="h-full w-full"  src={menu_banner} alt="" />
                 </figure>
                 <div className="w-1/2 h-[686px]">
                     {

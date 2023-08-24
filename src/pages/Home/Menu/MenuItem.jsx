@@ -6,7 +6,7 @@ const MenuItem = ({ item }) => {
     const { _id,food_name, food_items, price } = item;
     return (
         <div className="w-full cursor-pointer" >
-            <Link to={`/menuDetails/${_id}`}>
+            <Link to={`/menuItemDetails/${_id}`}>
                 <h3 className="text-[#C33] text-[25px] font-semibold">{food_name}</h3>
                 {
                     food_items.map((item, index) => <span key={index}>{item}</span>)
