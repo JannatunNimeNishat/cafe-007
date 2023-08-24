@@ -7,7 +7,7 @@ import cooking from '../../../assets/OurRestaurant/cooking.png'
 
 const OurRestaurant = () => {
     return (
-        <div className="my-container flex gap-12 mt-10 px-5">
+        <div className="my-container flex gap-12 mt-56 px-5">
             <div>
                 <div className='flex gap-2'>
                     <figure className='w-[230px] h-[153px]'>

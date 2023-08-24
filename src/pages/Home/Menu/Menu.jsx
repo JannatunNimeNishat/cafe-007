@@ -37,7 +37,7 @@ const Menu = () => {
     // console.log(menuItems);
 
     return (
-        <div className="my-container mt-32">
+        <div className="my-container mt-32 "> 
 
             <div className="text-center">
                 <p className="text-[#C33] font-bold text-[20px]">SPECIALS</p>
@@ -71,7 +71,7 @@ const Menu = () => {
             {/* tab - 1 */}
 
             <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 1 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[550px] border">
+                <figure className="w-1/2 h-[550px] ">
                     <img className="h-full w-full"  src={menu_banner} alt="" />
                 </figure>
                 <div className="w-1/2 h-[686px]">
