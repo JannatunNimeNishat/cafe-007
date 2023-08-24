@@ -4,6 +4,7 @@ import lunch_img from '../../../assets/menu/lunch-img.jpg';
 import starter_img from '../../../assets/menu/starter-img.jpg';
 import beverages from '../../../assets/menu/beverages.jpg';
 import axios from "axios";
+import MenuItem from "./MenuItem";
 const Menu = () => {
     const [activeTab, setActiveTab] = useState(1);
     const [menuItems, setMenuItems] = useState([]);
@@ -74,38 +75,58 @@ const Menu = () => {
                     <img src={menu_banner} alt="" />
                 </figure>
                 <div className="w-1/2 h-[686px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate culpa ab dolorem error ipsa quos autem deleniti aperiam, iure nam quis veritatis necessitatibus, in fugit itaque possimus natus fuga.
+                    {
+                        menuItems && menuItems?.map(item => <MenuItem
+                            key={item._id}
+                            item={item}
+                        ></MenuItem>)
+                    }
                 </div>
             </div>
 
 
             {/* tab - 2 */}
-            <div className={`mt-[18px] px-24 flex gap-2 ${activeTab === 2 ? 'block' : 'hidden'}`}>
+            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 2 ? 'block' : 'hidden'}`}>
                 <figure className="w-1/2 h-[686px]">
                     <img src={lunch_img} alt="" />
                 </figure>
                 <div className="w-1/2 h-[686px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate culpa ab dolorem error ipsa quos autem deleniti aperiam, iure nam quis veritatis necessitatibus, in fugit itaque possimus natus fuga.
+                    {
+                        menuItems && menuItems?.map(item => <MenuItem
+                            key={item._id}
+                            item={item}
+                        ></MenuItem>)
+                    }
                 </div>
             </div>
 
             {/* tab - 3 */}
-            <div className={`mt-[18px] px-24 flex gap-2 ${activeTab === 3 ? 'block' : 'hidden'}`}>
+            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 3 ? 'block' : 'hidden'}`}>
                 <figure className="w-1/2 h-[686px]">
                     <img src={starter_img} alt="" />
                 </figure>
                 <div className="w-1/2 h-[686px]">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate culpa ab dolorem error ipsa quos autem deleniti aperiam, iure nam quis veritatis necessitatibus, in fugit itaque possimus natus fuga.
+                    {
+                        menuItems && menuItems?.map(item => <MenuItem
+                            key={item._id}
+                            item={item}
+                        ></MenuItem>)
+                    }
                 </div>
             </div>
 
             {/* tab - 4 */}
-            <div className={`mt-[18px] px-24 flex gap-2 ${activeTab === 4 ? 'block' : 'hidden'}`}>
+            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 4 ? 'block' : 'hidden'}`}>
                 <figure className="w-1/2 h-[686px] ">
                     <img src={beverages} alt="" />
                 </figure>
                 <div className="w-1/2 ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias cupiditate culpa ab dolorem error ipsa quos autem deleniti aperiam, iure nam quis veritatis necessitatibus, in fugit itaque possimus natus fuga.
+                    {
+                        menuItems && menuItems?.map(item => <MenuItem
+                            key={item._id}
+                            item={item}
+                        ></MenuItem>)
+                    }
                 </div>
             </div>
 
