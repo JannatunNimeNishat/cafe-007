@@ -7,7 +7,7 @@ import dish_5 from '../../../assets/popular-dishes/dishes_5.png'
 
 const PopularDishes = () => {
     return (
-        <div className="my-container mt-[55px]">
+        <div className="my-container mt-32">
 
             <p className="text-[#2A435D] font-bold text-[20px] text-center leading-4">Food Items</p>
             <h3 className="text-[#C33] font-bold text-[35px] text-center ">Popular Dishes</h3>

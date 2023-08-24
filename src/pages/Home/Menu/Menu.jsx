@@ -37,7 +37,7 @@ const Menu = () => {
     // console.log(menuItems);
 
     return (
-        <div className="my-container mt-[80px]">
+        <div className="my-container mt-32">
 
             <div className="text-center">
                 <p className="text-[#C33] font-bold text-[20px]">SPECIALS</p>
