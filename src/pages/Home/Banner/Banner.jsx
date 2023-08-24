@@ -2,7 +2,7 @@ import bannerImg from '../../../assets/banner/bannerImg.png'
 import { AiFillFacebook,AiFillInstagram,AiFillLinkedin } from "react-icons/ai";
 const Banner = () => {
     return (
-        <div className="lg:mt-20 my-container ">
+        <div className="mt-10 lg:mt-20 my-container ">
 
             <div className="w-10/12 mx-auto lg:flex  gap-5">
                 <div className="">
@@ -14,13 +14,13 @@ const Banner = () => {
                         <h4 className='text-[20px] lg:text-[25px] my-text-color'>Price: $10.50</h4>
                     </div>
                 </div>
-                <figure>
+                <figure className='mt-3 lg:mt-0'>
                     <img src={bannerImg} alt="" />
                 </figure>
             </div>
 
 
-            <div className='flex justify-center lg:justify-start gap-[13px] mt-8'>
+            <div className='flex justify-center lg:justify-start gap-[13px] mt-3 lg:mt-8'>
                 <AiFillFacebook className='text-[#C33] h-[31px] w-[31px]' />
                 <AiFillInstagram className='text-[#C33] h-[31px] w-[31px]' />
                 <AiFillLinkedin className='text-[#C33] h-[31px] w-[31px]' />

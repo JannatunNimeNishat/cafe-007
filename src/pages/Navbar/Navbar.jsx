@@ -83,7 +83,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <Link className=" normal-case text-xl">
+                    <Link className=" hidden lg:block normal-case text-xl">
                         <img src={logo} alt="" />
                     </Link>
                 </div>
@@ -106,7 +106,7 @@ const Navbar = () => {
                     </div>
 
 
-                    <div className='text-[#2A435D] leading-5 flex items-center gap-2 mr-8'>
+                    <div className='text-[#2A435D] leading-5 hidden lg:flex items-center gap-2 mr-8'>
                         <div>
                             <p className='text-[#2A435D] font-bold'>Delivery </p>
                             <small className='text-[#2A435D] '>
@@ -117,12 +117,12 @@ const Navbar = () => {
                     </div>
                     {
                         user && user?.photoURL ?
-                            <figure className='h-10 w-10 rounded-full mr-2'>
+                            <figure className='h-10 w-10 rounded-full mr-2 hidden lg:block'>
                                 <img className='h-full w-full rounded-full' src={user?.photoURL} />
 
                             </figure>
                             :
-                            <BiSolidUser className='h-8 w-8 mr-2' />
+                            <BiSolidUser className='h-8 w-8 mr-2 hidden lg:block' />
                     }
 
                     {

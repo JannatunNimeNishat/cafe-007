@@ -37,16 +37,16 @@ const Menu = () => {
     // console.log(menuItems);
 
     return (
-        <div className="my-container mt-32 "> 
+        <div className="my-container mt-10 lg:mt-32  "> 
 
             <div className="text-center">
                 <p className="text-[#C33] font-bold text-[20px]">SPECIALS</p>
-                <h3 className="text-[#2A435D] text-[35px] font-bold">Check out our menu</h3>
-                <p className="text-[#2A435D] text-[15px] ">Demoralized by the charms of pleasure of the moment so blinded except to some advantage.</p>
+                <h3 className="text-[#2A435D] text-[25px] lg:text-[35px] font-bold">Check out our menu</h3>
+                <p className="text-[#2A435D] text-[15px] px-3 lg:px-0 ">Demoralized by the charms of pleasure of the moment so blinded except to some advantage.</p>
             </div>
 
             {/* tab head */}
-            <div className="flex justify-between mt-[25px] px-16">
+            <div className="lg:flex justify-between mt-[25px] px-16">
 
                 <p onClick={() => getMenuData('Breakfast', 1)} className={` cursor-pointer px-10 py-3 text-[25px]  text-center  font-semibold
                 ${activeTab === 1 ? 'bg-[#C33] text-white ' : 'text-[#C33]'}
@@ -70,11 +70,11 @@ const Menu = () => {
             {/* tab content */}
             {/* tab - 1 */}
 
-            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 1 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[550px] ">
+            <div className={`mt-[18px] px-5 lg:px-24 flex gap-5 ${activeTab === 1 ? 'block' : 'hidden'}`}>
+                <figure className="lg:w-1/2 h-[550px] hidden lg:block">
                     <img className="h-full w-full"  src={menu_banner} alt="" />
                 </figure>
-                <div className="w-1/2 h-[686px]">
+                <div className="lg:w-1/2 h-[686px]">
                     {
                         menuItems && menuItems?.map(item => <MenuItem
                             key={item._id}
@@ -86,11 +86,11 @@ const Menu = () => {
 
 
             {/* tab - 2 */}
-            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 2 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[686px]">
+            <div className={`mt-[18px] px-5 lg:px-24 flex gap-5 ${activeTab === 2 ? 'block' : 'hidden'}`}>
+                <figure className="lg:w-1/2 h-[686px] hidden lg:block">
                     <img src={lunch_img} alt="" />
                 </figure>
-                <div className="w-1/2 h-[686px]">
+                <div className="lg:w-1/2 h-[686px]">
                     {
                         menuItems && menuItems?.map(item => <MenuItem
                             key={item._id}
@@ -101,11 +101,11 @@ const Menu = () => {
             </div>
 
             {/* tab - 3 */}
-            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 3 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[686px]">
+            <div className={`mt-[18px] px-5 lg:px-24 flex gap-5 ${activeTab === 3 ? 'block' : 'hidden'}`}>
+                <figure className="w-full lg:w-1/2 h-[686px] hidden lg:block">
                     <img src={starter_img} alt="" />
                 </figure>
-                <div className="w-1/2 h-[686px]">
+                <div className="w-full lg:w-1/2 h-[686px]">
                     {
                         menuItems && menuItems?.map(item => <MenuItem
                             key={item._id}
@@ -116,11 +116,11 @@ const Menu = () => {
             </div>
 
             {/* tab - 4 */}
-            <div className={`mt-[18px] px-24 flex gap-5 ${activeTab === 4 ? 'block' : 'hidden'}`}>
-                <figure className="w-1/2 h-[686px] ">
+            <div className={`mt-[18px] px-5 lg:px-24 flex gap-5 ${activeTab === 4 ? 'block' : 'hidden'}`}>
+                <figure className="w-full lg:w-1/2 h-[686px] hidden lg:block">
                     <img src={beverages} alt="" />
                 </figure>
-                <div className="w-1/2 ">
+                <div className="w-full lg:w-1/2 ">
                     {
                         menuItems && menuItems?.map(item => <MenuItem
                             key={item._id}

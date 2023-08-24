@@ -3,12 +3,12 @@ import delivery_img from '../../../assets/delivery/image_delivery.png'
 import bike_img from '../../../assets/delivery/bike.png'
 const Delivery = () => {
     return (
-        <div className='my-container px-10 mt-40'>
+        <div className='my-container px-10 mt-10 lg:mt-40'>
 
             <div className='flex gap-24'>
                 <div>
                     <p className='text-[#C33] text-[20px] font-bold '>Delivery</p>
-                    <h3 className=' text-[35px] font-bold leading-9 mt-6'><span className='text-[#2A435D]'>A Moments Of</span><br />
+                    <h3 className=' text-[25px] lg:text-[35px] font-bold leading-9 mt-3 lg:mt-6'><span className='text-[#2A435D]'>A Moments Of</span><br />
                         <span className='text-[#C33]'>Delivered On Right Time & Place</span></h3>
 
                     <p className='text-[#2A435D] text-[18px] mt-7 leading-6'>Food Khan is a restaurant, bar and coffee roastery located on a <br /> busy corner site in Farringdon's Exmouth Market. With glazed <br /> frontage on two sides of the building, overlooking the market and <br /> a bustling London inteon.</p>
